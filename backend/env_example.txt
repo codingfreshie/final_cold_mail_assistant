@@ -1,0 +1,28 @@
+# Server Configuration
+PORT=3001
+SECRET_KEY=your-secret-key-here
+JWT_SECRET=your-jwt-secret-here
+
+# Gemini AI Configuration
+GEMINI_API_KEY=your-gemini-api-key-here
+# Optionally set GOOGLE_API_KEY directly; if not set, the Python scripts will map GEMINI_API_KEY to GOOGLE_API_KEY
+# GOOGLE_API_KEY=
+
+# SMTP (if using Node mailer) - not required when using Python Gmail sender
+# SMTP_HOST=smtp.example.com
+# SMTP_PORT=587
+# SMTP_SECURE=false
+# SMTP_USER=your-smtp-username
+# SMTP_PASS=your-smtp-password
+# SMTP_FROM=Your Name <no-reply@example.com>
+
+# Python Gmail sender (used by /api/send-mail)
+GMAIL_SENDER=your.name@gmail.com
+GMAIL_APP_PASSWORD=your-16-char-app-password
+
+# Tavily Search API (optional but recommended for WebSearch tool)
+TAVILY_API_KEY=your-tavily-api-key
+
+# Python executable override (optional)
+# On Windows the server defaults to 'py'; on others it defaults to 'python'
+# PYTHON_EXEC=py 
