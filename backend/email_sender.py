@@ -3,6 +3,8 @@ import sys
 import smtplib
 from email.message import EmailMessage
 
+def test_automation_setup() -> None:
+    print("TEST: Automation pipeline triggered successfully!")
 
 def send_email(sender_email: str, app_password: str, receiver_email: str, subject: str, body: str) -> None:
     msg = EmailMessage()
